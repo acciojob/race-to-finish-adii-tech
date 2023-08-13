@@ -15,6 +15,6 @@ let randomPromise = new Promise((resolve,reject)=>{
 }
 createPromises();
 Promise.any(promises).then(ele=>{
-	document.getElementByID('output').innerHTML = ele;
+	document.getElementById('output').innerHTML = ele;
 })
 
